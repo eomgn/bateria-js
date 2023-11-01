@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.key {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.key.active {
+    border: 2px solid #00f;
+    color: #00f;
+}
+
+.composer {
+    width: 260px;
+    margin-top: 20px;
+}
+.composer #input {
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+.composer button {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.composer button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.instructions {
+    margin-top: 1.5rem;
+    list-style-position: inside;
+}
+
+footer {
+    margin-top: 20px;
+    color: #000;
+    font-size: 13px;
+}
